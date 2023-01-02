@@ -19,10 +19,11 @@ user_kick_action = true
 }
 
 void
-msgUser log("you have kicked been due to excessive kicking, please do run/report <user> next time")
+msgUser log("you have kicked been due to excessive kicking, please do run/report <user> next time");
 {
-	textPrint log ("%u has been kicked for excessive kicking")
+	textPrint log ("%u has been kicked for excessive kicking");
 }
-if user_ban_action = true then perform ban
-return true
-    msgUser log("as a result of banning users from this room, you have been restricted access to any rooms using osu!meerkat until further notice")
+if user_ban_action = true then perform ban;
+return true;
+    msgUser log("as a result of banning users from this room, you have been restricted access to any rooms using osu!meerkat until further notice");
+}
