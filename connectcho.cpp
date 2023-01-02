@@ -16,5 +16,11 @@ connectcho (server * mp_num)
    create.mp.chan
     join.mp.chan
       prevent.silences
- if connectcho = false then connectirc ( irc.ppy.sh, checkifvalid, connect serv
-                                        }
+ if connectcho = false then connectirc ( irc.ppy.sh, checkifvalid, connect serv)
+   { 
+   dm.banchobot
+     create.mp.chan
+         join.mp.chan
+             prevent.silences
+       }
+    if connectcho and connectirc (checkifvalid) = false then break
